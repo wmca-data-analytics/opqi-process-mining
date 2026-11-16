@@ -1,0 +1,114 @@
+# Self-assembled but also inspired by other NHS orgs:
+# https://github.com/Work-In-Progress-For-Health/gitignore/blob/main/gitignore
+# https://github.com/nhsengland/nhse-rap-cookiecutter/blob/main/.gitignore
+# https://github.com/Birmingham-and-Solihull-ICS/BSOLproject/blob/main/.gitignore
+
+# Data
+# Non-data lookup tables are allowed in 'lookups/'
+data/
+*.rds
+*.rda
+.RData
+
+# Output
+output/
+outputs/
+
+# RStudio
+.Rproj.user/
+*.Rhistory
+.Rapp.history
+.Ruserdata
+
+# Tableau
+*.hyper
+*.twbx
+
+# Quarto render artifacts (may appear in project root or scripts/)
+.quarto/
+*.quarto_ipynb
+*_files/
+*_cache/
+output/
+scripts/*.rmarkdown
+
+# Python
+__pycache__/
+.ipynb_checkpoints
+
+# Node
+/node_modules/
+
+# Environments
+.env
+.envrc
+.venv
+.Renviron
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Temporary directories and files.
+tmp
+temp
+*[-_.]*tmp
+*[-_.]*temp
+tmp[-_.]**
+temp[-_.]**
+
+# Log directories and files.
+log
+logs
+*[-_.]*log
+*[-_.]*logs
+log[-_.]**
+logs[-_.]**
+
+# Cache directories and files.
+cache
+caches
+*[-_.]*cache
+*[-_.]*caches
+cache[-_.]**
+caches[-_.]**
+
+# Secret directories and files.
+secret
+secrets
+*[-_.]*secret
+*[-_.]*secrets
+secret[-_.]**
+secrets[-_.]**
+
+# Thumbnail caches
+Thumbs.db
+.DS_Store
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
